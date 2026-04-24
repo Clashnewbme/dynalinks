@@ -1,0 +1,91 @@
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Nunito', sans-serif;
+    }
+
+    body {
+      height: 100vh;
+      background: url('https://miro.medium.com/v2/resize:fit:1400/1*_zqJUXJaDneHRrXeXtR5vQ.webp') no-repeat center/cover;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #ffffff;
+    }
+
+    .container {
+      width: 360px;
+      padding: 30px;
+      border-radius: 24px;
+
+      background: rgba(255, 255, 255, 0.15);
+      backdrop-filter: blur(20px);
+      -webkit-backdrop-filter: blur(20px);
+
+      border: 1px solid rgba(255, 255, 255, 0.3);
+      box-shadow: 
+        0 8px 30px rgba(0, 0, 0, 0.2),
+        inset 0 0 20px rgba(255, 255, 255, 0.2);
+    }
+
+    .title {
+      text-align: center;
+      font-size: 28px;
+      font-weight: 800;
+      margin-bottom: 20px;
+
+      background: linear-gradient(90deg, #ffffff, #bfe9ff);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .links {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+
+    .link {
+      text-decoration: none;
+      color: white;
+      font-weight: 600;
+      padding: 14px;
+      border-radius: 16px;
+      text-align: center;
+
+      background: linear-gradient(
+        145deg,
+        rgba(255,255,255,0.35),
+        rgba(255,255,255,0.1)
+      );
+
+      border: 1px solid rgba(255,255,255,0.4);
+
+      box-shadow:
+        inset 0 1px 5px rgba(255,255,255,0.6),
+        0 4px 15px rgba(0,0,0,0.2);
+
+      transition: all 0.25s ease;
+    }
+
+    .link:hover {
+      transform: translateY(-3px) scale(1.02);
+
+      background: linear-gradient(
+        145deg,
+        rgba(255,255,255,0.6),
+        rgba(255,255,255,0.2)
+      );
+
+      box-shadow:
+        inset 0 1px 8px rgba(255,255,255,0.9),
+        0 6px 20px rgba(0,0,0,0.3);
+    }
+
+    .footer {
+      margin-top: 20px;
+      text-align: center;
+      font-size: 12px;
+      opacity: 0.8;
+    }
